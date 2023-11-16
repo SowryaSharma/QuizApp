@@ -1,9 +1,36 @@
 //
-//  QuestionsModel.swift
+//  QuizResponseModel.swift
 //  QuizApp
 //
-//  Created by admin on 11/13/23.
+//  Created by Sowrya on 11/13/23.
 //
 
 import Foundation
 
+struct QuizResponse: Codable {
+    let responseCode: Int?
+    let results: [QuizQuestion]
+
+    private enum CodingKeys: String, CodingKey {
+        case responseCode = "response_code"
+        case results
+    }
+}
+
+struct QuizQuestion: Codable {
+    let category: String
+    let type: String
+    let difficulty: String
+    let question: String
+    let correctAnswer: String
+    let incorrectAnswers: [String]
+
+    private enum CodingKeys: String, CodingKey {
+        case category
+        case type
+        case difficulty
+        case question
+        case correctAnswer = "correct_answer"
+        case incorrectAnswers = "incorrect_answers"
+    }
+}

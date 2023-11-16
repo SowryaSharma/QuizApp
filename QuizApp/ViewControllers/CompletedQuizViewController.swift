@@ -2,28 +2,42 @@
 //  CompletedQuizViewController.swift
 //  QuizApp
 //
-//  Created by admin on 11/13/23.
+//  Created by Sowrya on 11/13/23.
 //
 
 import UIKit
 
 class CompletedQuizViewController: UIViewController {
 
+    @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var subtitleLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
+    
+    var userScore:Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setupUi()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func closeButtonTapped(_ sender: Any) {
+        if let navigationController = navigationController{
+            var navigationArray = navigationController.viewControllers
+            navigationArray.remove(at: 1)
+            navigationController.viewControllers = navigationArray
+            navigationController.popViewController(animated: true)
+        }
     }
-    */
-
+    
+    
+    func setupUi(){
+        view.backgroundColor = UIColor.appBackgroundColor
+        titleLabel.textColor = UIColor.accentColor
+        titleLabel.font = UIFont.titleFont
+        subtitleLabel.textColor = UIColor.accentColor
+        subtitleLabel.font = UIFont.subTitleFont
+        scoreLabel.text = "Your score is \(userScore)"
+        scoreLabel.font = UIFont.subTitleFont
+        scoreLabel.textColor = UIColor.accentColor
+    }
 }

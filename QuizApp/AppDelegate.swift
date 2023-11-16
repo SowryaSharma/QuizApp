@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  QuizApp
 //
-//  Created by admin on 11/13/23.
+//  Created by Sowrya on 11/13/23.
 //
 
 import UIKit
