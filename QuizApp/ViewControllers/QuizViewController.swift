@@ -72,7 +72,7 @@ class QuizViewController: UIViewController {
         answersTableView.allowsSelection = true
         let currentQuestion = quizQuestions[currentQuestionIndex]
         questionLabel.text = currentQuestion.question.htmlDecoded
-        questionLabel.accessibilityLabel = "Question: \(currentQuestion.question)                                       choose your answer"
+        questionLabel.accessibilityLabel = "Question: \(currentQuestion.question)"
         allAnswers = currentQuestion.incorrectAnswers
         let correctAnswerIndex = Int.random(in: 0...allAnswers.count)
         allAnswers.insert(currentQuestion.correctAnswer, at: correctAnswerIndex)
