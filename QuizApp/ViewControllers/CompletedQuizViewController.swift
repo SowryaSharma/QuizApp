@@ -14,7 +14,7 @@ class CompletedQuizViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     
     var userScore:Int = 0
-    
+    static let identifier = "CompletedQuizViewController"
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUi()

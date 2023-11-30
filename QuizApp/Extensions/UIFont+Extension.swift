@@ -15,4 +15,7 @@ extension UIFont {
     static var subTitleFont: UIFont {
         return UIFont.systemFont(ofSize: 18 , weight: .bold)
     }
+    static var answersFont: UIFont{
+        return UIFont.systemFont(ofSize: 14 , weight: .regular)
+    }
 }

@@ -23,8 +23,9 @@ struct QuizQuestion: Codable {
     let difficulty: String
     let question: String
     let correctAnswer: String
-    let incorrectAnswers: [String]
-
+    var incorrectAnswers: [String]
+    var allAnswers:[String]?
+    var correctAnswerIndex:Int?
     private enum CodingKeys: String, CodingKey {
         case category
         case type
@@ -32,5 +33,6 @@ struct QuizQuestion: Codable {
         case question
         case correctAnswer = "correct_answer"
         case incorrectAnswers = "incorrect_answers"
+        case allAnswers
     }
 }

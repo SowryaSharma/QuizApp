@@ -10,6 +10,7 @@
 		8440D5CC2B02589700BDFF08 /* AnswerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440D5CA2B02589700BDFF08 /* AnswerTableViewCell.swift */; };
 		8440D5CD2B02589700BDFF08 /* AnswerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8440D5CB2B02589700BDFF08 /* AnswerTableViewCell.xib */; };
 		8440D5CF2B026AD600BDFF08 /* CompletedQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440D5CE2B026AD600BDFF08 /* CompletedQuizViewController.swift */; };
+		846F50732B186501005882DE /* NotificationName+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846F50722B186501005882DE /* NotificationName+Extension.swift */; };
 		84A037592B067506001F3FCA /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A037582B067506001F3FCA /* String+Extensions.swift */; };
 		84D9CDCE2B01F9A100C08ECD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9CDCD2B01F9A100C08ECD /* AppDelegate.swift */; };
 		84D9CDD02B01F9A100C08ECD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9CDCF2B01F9A100C08ECD /* SceneDelegate.swift */; };
@@ -30,6 +31,7 @@
 		8440D5CA2B02589700BDFF08 /* AnswerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerTableViewCell.swift; sourceTree = "<group>"; };
 		8440D5CB2B02589700BDFF08 /* AnswerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnswerTableViewCell.xib; sourceTree = "<group>"; };
 		8440D5CE2B026AD600BDFF08 /* CompletedQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedQuizViewController.swift; sourceTree = "<group>"; };
+		846F50722B186501005882DE /* NotificationName+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationName+Extension.swift"; sourceTree = "<group>"; };
 		84A037582B067506001F3FCA /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		84D9CDCA2B01F9A100C08ECD /* QuizApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D9CDCD2B01F9A100C08ECD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				84D9CDE82B02010A00C08ECD /* Uicolors+Extensions.swift */,
 				84D9CDEA2B0202C300C08ECD /* UIFont+Extension.swift */,
 				84A037582B067506001F3FCA /* String+Extensions.swift */,
+				846F50722B186501005882DE /* NotificationName+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 				84D9CDCE2B01F9A100C08ECD /* AppDelegate.swift in Sources */,
 				84D9CDEF2B020F0A00C08ECD /* QuizViewModel.swift in Sources */,
 				84D9CDEB2B0202C300C08ECD /* UIFont+Extension.swift in Sources */,
+				846F50732B186501005882DE /* NotificationName+Extension.swift in Sources */,
 				84D9CDD02B01F9A100C08ECD /* SceneDelegate.swift in Sources */,
 				84D9CDE62B01FAC300C08ECD /* Constants.swift in Sources */,
 				84D9CDE92B02010A00C08ECD /* Uicolors+Extensions.swift in Sources */,

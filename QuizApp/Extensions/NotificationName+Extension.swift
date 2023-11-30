@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+extension Notification.Name{
+    static var quizModelNotificationName:Notification.Name = {
+        return Notification.Name("quizModelNotificationName")
+    }()
+}

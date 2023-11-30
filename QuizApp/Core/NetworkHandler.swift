@@ -11,7 +11,6 @@ class NetworkHandler{
     static func makeRequest(url: URL, body: [String: Any]? = nil, method: HTTPMethod, completionHandler: @escaping (Result<(Data, HTTPURLResponse), NetworkError>) -> Void) {
         var request = URLRequest(url: url)
         request.httpMethod = method.rawValue
-        
         let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
             if let error = error {
                 completionHandler(.failure(.requestFailed(error)))
