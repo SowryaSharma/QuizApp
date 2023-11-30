@@ -21,11 +21,8 @@ class CompletedQuizViewController: UIViewController {
     }
     
     @IBAction func closeButtonTapped(_ sender: Any) {
-        if let navigationController = navigationController{
-            var navigationArray = navigationController.viewControllers
-            navigationArray.remove(at: 1)
-            navigationController.viewControllers = navigationArray
-            navigationController.popViewController(animated: true)
+        if let navigationController = navigationController, let targetViewcontroller = navigationController.viewControllers.first(where: {$0 is WelcomeViewController}){
+            navigationController.popToViewController(targetViewcontroller, animated: true)
         }
     }
     
