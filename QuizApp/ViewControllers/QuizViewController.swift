@@ -18,6 +18,7 @@ class QuizViewController: UIViewController {
     @IBOutlet private weak var nextButton: UIButton!
     
     let viewModel = QuizViewModel()
+    static let identifier = "QuizViewController"
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -17,7 +17,7 @@ class WelcomeViewController: UIViewController {
         setUpUI()
     }
     @IBAction func nextButtonTapped(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(withIdentifier: "QuizViewController") as! QuizViewController
+        let vc = storyboard?.instantiateViewController(withIdentifier: QuizViewController.identifier) as! QuizViewController
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
